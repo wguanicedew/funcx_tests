@@ -1,0 +1,3 @@
+prun  --workingGroup Rubin --prodSourceLabel test --site FUNCX_TEST --vo wlcg --exec "pwd; ls; echo Hello-world > myout.txt" --outDS user.wguan.`uuidgen` --nJobs 3 --output myout.txt 
+
+prun  --workingGroup Rubin --prodSourceLabel test --site FUNCX_TEST --vo wlcg --exec "python test_parsl_funcx.py > myout.txt" --outDS user.wguan.`uuidgen` --nJobs 3 --output myout.txt

@@ -1,0 +1,15 @@
+pip install globus-compute-sdk
+pip install globus-compute-endpoint
+
+(harvester) [root@pcuwvirt2 harvester]# globus-compute-endpoint list
++--------------------------------------+-------------+---------------+
+|             Endpoint ID              |   Status    | Endpoint Name |
++======================================+=============+===============+
+| None                                 | Initialized | default       |
++--------------------------------------+-------------+---------------+
+| d614a625-a276-453b-afdc-42422e327573 | Stopped     | mytestfuncx   |
++--------------------------------------+-------------+---------------+
+| None                                 | Initialized | mytestfuncx1  |
++--------------------------------------+-------------+---------------+
+
+

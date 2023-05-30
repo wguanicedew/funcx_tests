@@ -1,0 +1,14 @@
+universe                = vanilla
+arguments               = 
+log                     = log/test.log
+output                  = log/outfile.$(Cluster).$(Process).out
+error                   = log/errors.$(Cluster).$(Process).err
+Requirements = ((Arch == "X86_64") && (regexp("CentOS7",OpSysAndVer)))
+WhenToTransferOutput = ON_EXIT_OR_EVICT
+OnExitRemove         = TRUE
++JobFlavour = "testmatch"
+request_GPUs = 1
+request_CPUs = 4
+Request_memory = 8 GB
+Request_disk   = 4 GB
+queue
